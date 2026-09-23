@@ -12,12 +12,12 @@
         {
           "name": "WeGoWireless ESP32 Boards",
           "architecture": "esp32",
-          "version": "0.1.0",
+          "version": "0.1.1",
           "category": "Contributed",
-          "url": "https://github.com/WeGoWireless/WeGoWireless-ESP32-Boards/releases/download/v0.1.0/WeGoWireless-ESP32-Boards-0.1.0.zip",
-          "archiveFileName": "WeGoWireless-ESP32-Boards-0.1.0.zip",
+          "url": "https://github.com/WeGoWireless/WeGoWireless-ESP32-Boards/releases/download/v0.1.1/WeGoWireless-ESP32-Boards-0.1.1.zip",
+          "archiveFileName": "WeGoWireless-ESP32-Boards-0.1.1.zip",
           "checksum": "SHA-256:47D64C68196430E411D5FB38211D85BC9BA4C33B0C501D3255C53FCB5E6F0E88",
-          "size": "4531",
+          "size": "5215",
           "boards": [
             {
               "name": "WeGoWireless Indust24"
