@@ -1,0 +1,37 @@
+{
+  "packages": [
+    {
+      "name": "WeGoWireless",
+      "maintainer": "WeGoWireless",
+      "websiteURL": "https://github.com/WeGoWireless/WeGoWireless-ESP32-Boards",
+      "email": "",
+      "help": {
+        "online": "https://github.com/WeGoWireless/WeGoWireless-ESP32-Boards/issues"
+      },
+      "platforms": [
+        {
+          "name": "WeGoWireless ESP32 Boards",
+          "architecture": "esp32",
+          "version": "0.1.0",
+          "category": "Contributed",
+          "url": "https://github.com/WeGoWireless/WeGoWireless-ESP32-Boards/releases/download/v0.1.0/WeGoWireless-ESP32-Boards-0.1.0.zip",
+          "archiveFileName": "WeGoWireless-ESP32-Boards-0.1.0.zip",
+          "checksum": "SHA-256:C193AD3A42FE6364BC04BFC424037EC791F1D91BF4A09BB4AED2ACEB142A3485",
+          "size": "4531",
+          "boards": [
+            {
+              "name": "WeGoWireless Indust24"
+            },
+            {
+              "name": "WeGoWireless RdyTouch2.8"
+            }
+          ],
+          "toolsDependencies": [],
+          "discoveryDependencies": [],
+          "monitorDependencies": []
+        }
+      ],
+      "tools": []
+    }
+  ]
+}
