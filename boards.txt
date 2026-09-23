@@ -1,0 +1,365 @@
+# WeGoWireless Indust24
+wegowireless_indust24.name=WeGoWireless Indust24
+
+# Upload
+wegowireless_indust24.upload.tool=esptool_py
+wegowireless_indust24.upload.tool.default=esptool_py
+wegowireless_indust24.upload.tool.network=esp_ota
+wegowireless_indust24.upload.maximum_data_size=327680
+wegowireless_indust24.upload.flags=
+wegowireless_indust24.upload.extra_flags=
+wegowireless_indust24.upload.use_1200bps_touch=false
+wegowireless_indust24.upload.wait_for_upload_port=false
+
+# Build
+wegowireless_indust24.build.tarch=xtensa
+wegowireless_indust24.build.target=esp32s3
+wegowireless_indust24.build.mcu=esp32s3
+wegowireless_indust24.build.core=esp32
+wegowireless_indust24.build.variant=wegowireless_indust24
+wegowireless_indust24.build.board=WEGOWIRELESS_INDUST24
+wegowireless_indust24.build.bootloader_addr=0x0
+
+wegowireless_indust24.build.f_cpu=240000000L
+wegowireless_indust24.build.flash_size=8MB
+wegowireless_indust24.build.flash_freq=80m
+wegowireless_indust24.build.flash_mode=dio
+wegowireless_indust24.build.boot=qio
+
+wegowireless_indust24.build.partitions=wego_8MB_ota
+wegowireless_indust24.build.defines=
+wegowireless_indust24.build.loop_core=
+wegowireless_indust24.build.event_core=
+
+wegowireless_indust24.build.flash_type=qio
+wegowireless_indust24.build.psram_type=qspi
+wegowireless_indust24.build.memory_type={build.flash_type}_{build.psram_type}
+
+wegowireless_indust24.build.usb_mode=1
+wegowireless_indust24.build.cdc_on_boot=1
+wegowireless_indust24.build.msc_on_boot=0
+wegowireless_indust24.build.dfu_on_boot=0
+
+
+# Upload Speed - default 921600
+wegowireless_indust24.menu.UploadSpeed.921600=921600
+wegowireless_indust24.menu.UploadSpeed.921600.upload.speed=921600
+wegowireless_indust24.menu.UploadSpeed.460800=460800
+wegowireless_indust24.menu.UploadSpeed.460800.upload.speed=460800
+wegowireless_indust24.menu.UploadSpeed.115200=115200
+wegowireless_indust24.menu.UploadSpeed.115200.upload.speed=115200
+
+
+# USB Mode - default Hardware CDC and JTAG
+wegowireless_indust24.menu.USBMode.hwcdc=Hardware CDC and JTAG
+wegowireless_indust24.menu.USBMode.hwcdc.build.usb_mode=1
+wegowireless_indust24.menu.USBMode.default=USB-OTG (TinyUSB)
+wegowireless_indust24.menu.USBMode.default.build.usb_mode=0
+
+
+# USB CDC On Boot - default Enabled
+wegowireless_indust24.menu.CDCOnBoot.cdc=Enabled
+wegowireless_indust24.menu.CDCOnBoot.cdc.build.cdc_on_boot=1
+wegowireless_indust24.menu.CDCOnBoot.default=Disabled
+wegowireless_indust24.menu.CDCOnBoot.default.build.cdc_on_boot=0
+
+
+# USB MSC On Boot - default Disabled
+wegowireless_indust24.menu.MSCOnBoot.default=Disabled
+wegowireless_indust24.menu.MSCOnBoot.default.build.msc_on_boot=0
+wegowireless_indust24.menu.MSCOnBoot.msc=Enabled (Requires USB-OTG Mode)
+wegowireless_indust24.menu.MSCOnBoot.msc.build.msc_on_boot=1
+
+
+# USB DFU On Boot - default Disabled
+wegowireless_indust24.menu.DFUOnBoot.default=Disabled
+wegowireless_indust24.menu.DFUOnBoot.default.build.dfu_on_boot=0
+wegowireless_indust24.menu.DFUOnBoot.dfu=Enabled (Requires USB-OTG Mode)
+wegowireless_indust24.menu.DFUOnBoot.dfu.build.dfu_on_boot=1
+
+
+# Upload Mode - default UART0 / Hardware CDC
+wegowireless_indust24.menu.UploadMode.default=UART0 / Hardware CDC
+wegowireless_indust24.menu.UploadMode.default.upload.use_1200bps_touch=false
+wegowireless_indust24.menu.UploadMode.default.upload.wait_for_upload_port=false
+wegowireless_indust24.menu.UploadMode.cdc=USB-OTG CDC (TinyUSB)
+wegowireless_indust24.menu.UploadMode.cdc.upload.use_1200bps_touch=true
+wegowireless_indust24.menu.UploadMode.cdc.upload.wait_for_upload_port=true
+
+
+# CPU Frequency - default 240MHz
+wegowireless_indust24.menu.CPUFreq.240=240MHz (WiFi)
+wegowireless_indust24.menu.CPUFreq.240.build.f_cpu=240000000L
+wegowireless_indust24.menu.CPUFreq.160=160MHz (WiFi)
+wegowireless_indust24.menu.CPUFreq.160.build.f_cpu=160000000L
+wegowireless_indust24.menu.CPUFreq.80=80MHz (WiFi)
+wegowireless_indust24.menu.CPUFreq.80.build.f_cpu=80000000L
+wegowireless_indust24.menu.CPUFreq.40=40MHz
+wegowireless_indust24.menu.CPUFreq.40.build.f_cpu=40000000L
+wegowireless_indust24.menu.CPUFreq.20=20MHz
+wegowireless_indust24.menu.CPUFreq.20.build.f_cpu=20000000L
+wegowireless_indust24.menu.CPUFreq.10=10MHz
+wegowireless_indust24.menu.CPUFreq.10.build.f_cpu=10000000L
+
+
+# Flash Mode - default QIO 80MHz
+wegowireless_indust24.menu.FlashMode.qio=QIO 80MHz
+wegowireless_indust24.menu.FlashMode.qio.build.flash_mode=dio
+wegowireless_indust24.menu.FlashMode.qio.build.boot=qio
+wegowireless_indust24.menu.FlashMode.qio.build.boot_freq=80m
+wegowireless_indust24.menu.FlashMode.qio.build.flash_freq=80m
+
+wegowireless_indust24.menu.FlashMode.qio120=QIO 120MHz
+wegowireless_indust24.menu.FlashMode.qio120.build.flash_mode=dio
+wegowireless_indust24.menu.FlashMode.qio120.build.boot=qio
+wegowireless_indust24.menu.FlashMode.qio120.build.boot_freq=120m
+wegowireless_indust24.menu.FlashMode.qio120.build.flash_freq=80m
+
+wegowireless_indust24.menu.FlashMode.dio=DIO 80MHz
+wegowireless_indust24.menu.FlashMode.dio.build.flash_mode=dio
+wegowireless_indust24.menu.FlashMode.dio.build.boot=dio
+wegowireless_indust24.menu.FlashMode.dio.build.boot_freq=80m
+wegowireless_indust24.menu.FlashMode.dio.build.flash_freq=80m
+
+
+# Flash Size - Indust24 is always 8MB
+wegowireless_indust24.menu.FlashSize.8M=8MB (64Mb)
+wegowireless_indust24.menu.FlashSize.8M.build.flash_size=8MB
+
+
+# Partition Scheme - default OTA Max App
+wegowireless_indust24.menu.PartitionScheme.wego_8MB_ota=OTA Max App (No SPIFFS)
+wegowireless_indust24.menu.PartitionScheme.wego_8MB_ota.build.partitions=wego_8MB_ota
+wegowireless_indust24.menu.PartitionScheme.wego_8MB_ota.upload.maximum_size=4128768
+
+wegowireless_indust24.menu.PartitionScheme.default_8MB=Default 8MB (3MB APP/1.5MB SPIFFS)
+wegowireless_indust24.menu.PartitionScheme.default_8MB.build.partitions=default_8MB
+wegowireless_indust24.menu.PartitionScheme.default_8MB.upload.maximum_size=3342336
+
+
+# Core Debug Level - default Error
+wegowireless_indust24.menu.DebugLevel.error=Error
+wegowireless_indust24.menu.DebugLevel.error.build.code_debug=1
+wegowireless_indust24.menu.DebugLevel.none=None
+wegowireless_indust24.menu.DebugLevel.none.build.code_debug=0
+wegowireless_indust24.menu.DebugLevel.warn=Warn
+wegowireless_indust24.menu.DebugLevel.warn.build.code_debug=2
+wegowireless_indust24.menu.DebugLevel.info=Info
+wegowireless_indust24.menu.DebugLevel.info.build.code_debug=3
+wegowireless_indust24.menu.DebugLevel.debug=Debug
+wegowireless_indust24.menu.DebugLevel.debug.build.code_debug=4
+wegowireless_indust24.menu.DebugLevel.verbose=Verbose
+wegowireless_indust24.menu.DebugLevel.verbose.build.code_debug=5
+
+
+# PSRAM - default QSPI PSRAM
+wegowireless_indust24.menu.PSRAM.enabled=QSPI PSRAM
+wegowireless_indust24.menu.PSRAM.enabled.build.defines=-DBOARD_HAS_PSRAM
+wegowireless_indust24.menu.PSRAM.enabled.build.psram_type=qspi
+wegowireless_indust24.menu.PSRAM.disabled=Disabled
+wegowireless_indust24.menu.PSRAM.disabled.build.defines=
+wegowireless_indust24.menu.PSRAM.disabled.build.psram_type=qspi
+
+
+# Loop Core - default Core 1
+wegowireless_indust24.menu.LoopCore.1=Core 1
+wegowireless_indust24.menu.LoopCore.1.build.loop_core=-DARDUINO_RUNNING_CORE=1
+wegowireless_indust24.menu.LoopCore.0=Core 0
+wegowireless_indust24.menu.LoopCore.0.build.loop_core=-DARDUINO_RUNNING_CORE=0
+
+
+# Events Core - default Core 0
+wegowireless_indust24.menu.EventsCore.0=Core 0
+wegowireless_indust24.menu.EventsCore.0.build.event_core=-DARDUINO_EVENT_RUNNING_CORE=0
+wegowireless_indust24.menu.EventsCore.1=Core 1
+wegowireless_indust24.menu.EventsCore.1.build.event_core=-DARDUINO_EVENT_RUNNING_CORE=1
+
+
+# Erase Flash - default Disabled
+wegowireless_indust24.menu.EraseFlash.none=Disabled
+wegowireless_indust24.menu.EraseFlash.none.upload.erase_cmd=
+wegowireless_indust24.menu.EraseFlash.all=Enabled
+wegowireless_indust24.menu.EraseFlash.all.upload.erase_cmd=-e
+
+##############################################################
+# WeGoWireless RdyTouch2.8
+wegowireless_rdytouch_2_8.name=WeGoWireless RdyTouch2.8
+
+# Upload
+wegowireless_rdytouch_2_8.upload.tool=esptool_py
+wegowireless_rdytouch_2_8.upload.tool.default=esptool_py
+wegowireless_rdytouch_2_8.upload.tool.network=esp_ota
+wegowireless_rdytouch_2_8.upload.maximum_data_size=327680
+wegowireless_rdytouch_2_8.upload.flags=
+wegowireless_rdytouch_2_8.upload.extra_flags=
+wegowireless_rdytouch_2_8.upload.use_1200bps_touch=false
+wegowireless_rdytouch_2_8.upload.wait_for_upload_port=false
+
+# Build
+wegowireless_rdytouch_2_8.build.tarch=xtensa
+wegowireless_rdytouch_2_8.build.target=esp32s3
+wegowireless_rdytouch_2_8.build.mcu=esp32s3
+wegowireless_rdytouch_2_8.build.core=esp32
+wegowireless_rdytouch_2_8.build.variant=wegowireless_rdytouch_2_8
+wegowireless_rdytouch_2_8.build.board=WEGOWIRELESS_RDYTOUCH_2_8
+wegowireless_rdytouch_2_8.build.bootloader_addr=0x0
+
+wegowireless_rdytouch_2_8.build.f_cpu=240000000L
+wegowireless_rdytouch_2_8.build.flash_size=8MB
+wegowireless_rdytouch_2_8.build.flash_freq=80m
+wegowireless_rdytouch_2_8.build.flash_mode=dio
+wegowireless_rdytouch_2_8.build.boot=qio
+
+wegowireless_rdytouch_2_8.build.partitions=wego_8MB_ota
+wegowireless_rdytouch_2_8.build.defines=
+wegowireless_rdytouch_2_8.build.loop_core=
+wegowireless_rdytouch_2_8.build.event_core=
+
+wegowireless_rdytouch_2_8.build.flash_type=qio
+wegowireless_rdytouch_2_8.build.psram_type=qspi
+wegowireless_rdytouch_2_8.build.memory_type={build.flash_type}_{build.psram_type}
+
+wegowireless_rdytouch_2_8.build.usb_mode=1
+wegowireless_rdytouch_2_8.build.cdc_on_boot=1
+wegowireless_rdytouch_2_8.build.msc_on_boot=0
+wegowireless_rdytouch_2_8.build.dfu_on_boot=0
+
+# Upload Speed - default 921600
+wegowireless_rdytouch_2_8.menu.UploadSpeed.921600=921600
+wegowireless_rdytouch_2_8.menu.UploadSpeed.921600.upload.speed=921600
+wegowireless_rdytouch_2_8.menu.UploadSpeed.460800=460800
+wegowireless_rdytouch_2_8.menu.UploadSpeed.460800.upload.speed=460800
+wegowireless_rdytouch_2_8.menu.UploadSpeed.115200=115200
+wegowireless_rdytouch_2_8.menu.UploadSpeed.115200.upload.speed=115200
+
+
+# USB Mode - default Hardware CDC and JTAG
+wegowireless_rdytouch_2_8.menu.USBMode.hwcdc=Hardware CDC and JTAG
+wegowireless_rdytouch_2_8.menu.USBMode.hwcdc.build.usb_mode=1
+wegowireless_rdytouch_2_8.menu.USBMode.default=USB-OTG (TinyUSB)
+wegowireless_rdytouch_2_8.menu.USBMode.default.build.usb_mode=0
+
+
+# USB CDC On Boot - default Enabled
+wegowireless_rdytouch_2_8.menu.CDCOnBoot.cdc=Enabled
+wegowireless_rdytouch_2_8.menu.CDCOnBoot.cdc.build.cdc_on_boot=1
+wegowireless_rdytouch_2_8.menu.CDCOnBoot.default=Disabled
+wegowireless_rdytouch_2_8.menu.CDCOnBoot.default.build.cdc_on_boot=0
+
+
+# USB MSC On Boot - default Disabled
+wegowireless_rdytouch_2_8.menu.MSCOnBoot.default=Disabled
+wegowireless_rdytouch_2_8.menu.MSCOnBoot.default.build.msc_on_boot=0
+wegowireless_rdytouch_2_8.menu.MSCOnBoot.msc=Enabled (Requires USB-OTG Mode)
+wegowireless_rdytouch_2_8.menu.MSCOnBoot.msc.build.msc_on_boot=1
+
+
+# USB DFU On Boot - default Disabled
+wegowireless_rdytouch_2_8.menu.DFUOnBoot.default=Disabled
+wegowireless_rdytouch_2_8.menu.DFUOnBoot.default.build.dfu_on_boot=0
+wegowireless_rdytouch_2_8.menu.DFUOnBoot.dfu=Enabled (Requires USB-OTG Mode)
+wegowireless_rdytouch_2_8.menu.DFUOnBoot.dfu.build.dfu_on_boot=1
+
+
+# Upload Mode - default UART0 / Hardware CDC
+wegowireless_rdytouch_2_8.menu.UploadMode.default=UART0 / Hardware CDC
+wegowireless_rdytouch_2_8.menu.UploadMode.default.upload.use_1200bps_touch=false
+wegowireless_rdytouch_2_8.menu.UploadMode.default.upload.wait_for_upload_port=false
+wegowireless_rdytouch_2_8.menu.UploadMode.cdc=USB-OTG CDC (TinyUSB)
+wegowireless_rdytouch_2_8.menu.UploadMode.cdc.upload.use_1200bps_touch=true
+wegowireless_rdytouch_2_8.menu.UploadMode.cdc.upload.wait_for_upload_port=true
+
+
+# CPU Frequency - default 240MHz
+wegowireless_rdytouch_2_8.menu.CPUFreq.240=240MHz (WiFi)
+wegowireless_rdytouch_2_8.menu.CPUFreq.240.build.f_cpu=240000000L
+wegowireless_rdytouch_2_8.menu.CPUFreq.160=160MHz (WiFi)
+wegowireless_rdytouch_2_8.menu.CPUFreq.160.build.f_cpu=160000000L
+wegowireless_rdytouch_2_8.menu.CPUFreq.80=80MHz (WiFi)
+wegowireless_rdytouch_2_8.menu.CPUFreq.80.build.f_cpu=80000000L
+wegowireless_rdytouch_2_8.menu.CPUFreq.40=40MHz
+wegowireless_rdytouch_2_8.menu.CPUFreq.40.build.f_cpu=40000000L
+wegowireless_rdytouch_2_8.menu.CPUFreq.20=20MHz
+wegowireless_rdytouch_2_8.menu.CPUFreq.20.build.f_cpu=20000000L
+wegowireless_rdytouch_2_8.menu.CPUFreq.10=10MHz
+wegowireless_rdytouch_2_8.menu.CPUFreq.10.build.f_cpu=10000000L
+
+
+# Flash Mode - default QIO 80MHz
+wegowireless_rdytouch_2_8.menu.FlashMode.qio=QIO 80MHz
+wegowireless_rdytouch_2_8.menu.FlashMode.qio.build.flash_mode=dio
+wegowireless_rdytouch_2_8.menu.FlashMode.qio.build.boot=qio
+wegowireless_rdytouch_2_8.menu.FlashMode.qio.build.boot_freq=80m
+wegowireless_rdytouch_2_8.menu.FlashMode.qio.build.flash_freq=80m
+
+wegowireless_rdytouch_2_8.menu.FlashMode.qio120=QIO 120MHz
+wegowireless_rdytouch_2_8.menu.FlashMode.qio120.build.flash_mode=dio
+wegowireless_rdytouch_2_8.menu.FlashMode.qio120.build.boot=qio
+wegowireless_rdytouch_2_8.menu.FlashMode.qio120.build.boot_freq=120m
+wegowireless_rdytouch_2_8.menu.FlashMode.qio120.build.flash_freq=80m
+
+wegowireless_rdytouch_2_8.menu.FlashMode.dio=DIO 80MHz
+wegowireless_rdytouch_2_8.menu.FlashMode.dio.build.flash_mode=dio
+wegowireless_rdytouch_2_8.menu.FlashMode.dio.build.boot=dio
+wegowireless_rdytouch_2_8.menu.FlashMode.dio.build.boot_freq=80m
+wegowireless_rdytouch_2_8.menu.FlashMode.dio.build.flash_freq=80m
+
+
+# Flash Size - RdyTouch2.8 is always 8MB
+wegowireless_rdytouch_2_8.menu.FlashSize.8M=8MB (64Mb)
+wegowireless_rdytouch_2_8.menu.FlashSize.8M.build.flash_size=8MB
+
+
+# Partition Scheme - default OTA Max App
+wegowireless_rdytouch_2_8.menu.PartitionScheme.wego_8MB_ota=OTA Max App (No SPIFFS)
+wegowireless_rdytouch_2_8.menu.PartitionScheme.wego_8MB_ota.build.partitions=wego_8MB_ota
+wegowireless_rdytouch_2_8.menu.PartitionScheme.wego_8MB_ota.upload.maximum_size=4128768
+
+wegowireless_rdytouch_2_8.menu.PartitionScheme.default_8MB=Default 8MB (3MB APP/1.5MB SPIFFS)
+wegowireless_rdytouch_2_8.menu.PartitionScheme.default_8MB.build.partitions=default_8MB
+wegowireless_rdytouch_2_8.menu.PartitionScheme.default_8MB.upload.maximum_size=3342336
+
+
+# Core Debug Level - default Error
+wegowireless_rdytouch_2_8.menu.DebugLevel.error=Error
+wegowireless_rdytouch_2_8.menu.DebugLevel.error.build.code_debug=1
+wegowireless_rdytouch_2_8.menu.DebugLevel.none=None
+wegowireless_rdytouch_2_8.menu.DebugLevel.none.build.code_debug=0
+wegowireless_rdytouch_2_8.menu.DebugLevel.warn=Warn
+wegowireless_rdytouch_2_8.menu.DebugLevel.warn.build.code_debug=2
+wegowireless_rdytouch_2_8.menu.DebugLevel.info=Info
+wegowireless_rdytouch_2_8.menu.DebugLevel.info.build.code_debug=3
+wegowireless_rdytouch_2_8.menu.DebugLevel.debug=Debug
+wegowireless_rdytouch_2_8.menu.DebugLevel.debug.build.code_debug=4
+wegowireless_rdytouch_2_8.menu.DebugLevel.verbose=Verbose
+wegowireless_rdytouch_2_8.menu.DebugLevel.verbose.build.code_debug=5
+
+
+# PSRAM - default QSPI PSRAM
+wegowireless_rdytouch_2_8.menu.PSRAM.enabled=QSPI PSRAM
+wegowireless_rdytouch_2_8.menu.PSRAM.enabled.build.defines=-DBOARD_HAS_PSRAM
+wegowireless_rdytouch_2_8.menu.PSRAM.enabled.build.psram_type=qspi
+wegowireless_rdytouch_2_8.menu.PSRAM.disabled=Disabled
+wegowireless_rdytouch_2_8.menu.PSRAM.disabled.build.defines=
+wegowireless_rdytouch_2_8.menu.PSRAM.disabled.build.psram_type=qspi
+
+
+# Loop Core - default Core 1
+wegowireless_rdytouch_2_8.menu.LoopCore.1=Core 1
+wegowireless_rdytouch_2_8.menu.LoopCore.1.build.loop_core=-DARDUINO_RUNNING_CORE=1
+wegowireless_rdytouch_2_8.menu.LoopCore.0=Core 0
+wegowireless_rdytouch_2_8.menu.LoopCore.0.build.loop_core=-DARDUINO_RUNNING_CORE=0
+
+
+# Events Core - default Core 0
+wegowireless_rdytouch_2_8.menu.EventsCore.0=Core 0
+wegowireless_rdytouch_2_8.menu.EventsCore.0.build.event_core=-DARDUINO_EVENT_RUNNING_CORE=0
+wegowireless_rdytouch_2_8.menu.EventsCore.1=Core 1
+wegowireless_rdytouch_2_8.menu.EventsCore.1.build.event_core=-DARDUINO_EVENT_RUNNING_CORE=1
+
+
+# Erase Flash - default Disabled
+wegowireless_rdytouch_2_8.menu.EraseFlash.none=Disabled
+wegowireless_rdytouch_2_8.menu.EraseFlash.none.upload.erase_cmd=
+wegowireless_rdytouch_2_8.menu.EraseFlash.all=Enabled
+wegowireless_rdytouch_2_8.menu.EraseFlash.all.upload.erase_cmd=-e
