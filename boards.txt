@@ -43,7 +43,6 @@ wegowireless_indust24.build.flash_freq=80m
 wegowireless_indust24.build.flash_mode=dio
 wegowireless_indust24.build.boot=qio
 
-wegowireless_indust24.build.partitions=wego_8MB_ota
 wegowireless_indust24.build.defines=
 wegowireless_indust24.build.loop_core=
 wegowireless_indust24.build.event_core=
@@ -146,7 +145,7 @@ wegowireless_indust24.menu.FlashSize.8M.build.flash_size=8MB
 
 # Partition Scheme - default OTA Max App
 wegowireless_indust24.menu.PartitionScheme.wego_8MB_ota=OTA Max App (No SPIFFS)
-wegowireless_indust24.menu.PartitionScheme.wego_8MB_ota.build.partitions=wego_8MB_ota
+wegowireless_indust24.menu.PartitionScheme.wego_8MB_ota.build.custom_partitions=wego_8MB_ota
 wegowireless_indust24.menu.PartitionScheme.wego_8MB_ota.upload.maximum_size=4128768
 
 wegowireless_indust24.menu.PartitionScheme.default_8MB=Default 8MB (3MB APP/1.5MB SPIFFS)
@@ -227,7 +226,6 @@ wegowireless_rdytouch_2_8.build.flash_freq=80m
 wegowireless_rdytouch_2_8.build.flash_mode=dio
 wegowireless_rdytouch_2_8.build.boot=qio
 
-wegowireless_rdytouch_2_8.build.partitions=wego_8MB_ota
 wegowireless_rdytouch_2_8.build.defines=
 wegowireless_rdytouch_2_8.build.loop_core=
 wegowireless_rdytouch_2_8.build.event_core=
@@ -329,7 +327,7 @@ wegowireless_rdytouch_2_8.menu.FlashSize.8M.build.flash_size=8MB
 
 # Partition Scheme - default OTA Max App
 wegowireless_rdytouch_2_8.menu.PartitionScheme.wego_8MB_ota=OTA Max App (No SPIFFS)
-wegowireless_rdytouch_2_8.menu.PartitionScheme.wego_8MB_ota.build.partitions=wego_8MB_ota
+wegowireless_rdytouch_2_8.menu.PartitionScheme.wego_8MB_ota.build.custom_partitions=wego_8MB_ota
 wegowireless_rdytouch_2_8.menu.PartitionScheme.wego_8MB_ota.upload.maximum_size=4128768
 
 wegowireless_rdytouch_2_8.menu.PartitionScheme.default_8MB=Default 8MB (3MB APP/1.5MB SPIFFS)
